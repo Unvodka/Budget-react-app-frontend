@@ -1,0 +1,126 @@
+h2 {
+  text-align: center;
+  color: whitesmoke;
+  padding: 5px;
+  letter-spacing: 1px;
+  width: 180px;
+  max-width: 90%;
+  margin: 2rem auto 0 auto;
+}
+
+.red {
+  color: rgb(189, 35, 35);
+  border-radius: 0;
+}
+.green {
+  text-align: center;
+  color: rgb(41, 119, 41);
+  border-radius: 0;
+}
+.salary {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  max-width: 36vw;
+  margin:  auto;
+  text-align: center;
+  align-items: center;
+}
+.salary-form {
+  display: flex;
+  align-items: center;
+}
+.salary input {
+  max-width: 100px;
+  background-color: aliceblue;
+  margin: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.salary p {
+  font-weight: 600;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.previsions {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-left: 4.5%;
+}
+
+table {
+  border: 1px solid black;
+  margin: 1rem 0.25rem;
+  text-align: center;
+  border-radius: 5px;
+  width: 130px;
+}
+th {
+  background-color: rgb(71, 71, 71);
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+td {
+  background-color: whitesmoke;
+  color: rgb(71, 71, 71);
+}
+.btn-form {
+  padding: 7px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .previsions {
+    margin: 27vh 1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .salary {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .red, .green {
+    position: absolute;
+    left: 1rem;
+    top: 30vh;
+    text-shadow: 2px 1px white;
+  }
+  h3 {
+    margin-left: 2.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .salary {
+    position: relative;
+    left: 15%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  .previsions {
+    display: flex;
+    flex-direction: row;
+  }
+  .salary {
+    left: 0;
+  }
+  h2 {
+    margin: auto;
+    width: 100px;
+  }
+  .red, .green {
+    width: 100%;
+  }
+  table {
+    margin: auto;
+  }
+}
